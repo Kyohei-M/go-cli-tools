@@ -34,7 +34,7 @@ func main() {
 		fmt.Println("mv: missing file operand")
 		fmt.Println("Try 'mv --help' for more information.")
 	} else if count == 1 && targetDir == "" {
-		fmt.Printf("mv: missing destination file operand after '%s'/n", args[0])
+		fmt.Printf("mv: missing destination file operand after '%s'\n", args[0])
 		fmt.Println("Try 'mv --help' for more information.")
 	}
 
