@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"path/filepath"
@@ -35,7 +34,7 @@ func main() {
 		fmt.Println("mv: missing file operand")
 		fmt.Println("Try 'mv --help' for more information.")
 	} else if count == 1 && targetDir == "" {
-		io.WriteString(os.Stdout, fmt.Sprintln("mv: missing destination file operand after '%s'", args[0]))
+		fmt.Printf("mv: missing destination file operand after '%s'/n", args[0])
 		fmt.Println("Try 'mv --help' for more information.")
 	}
 

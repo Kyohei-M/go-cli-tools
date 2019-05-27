@@ -35,7 +35,7 @@ func main() {
 		fmt.Println("Try 'cp --help' for more information.")
 		return
 	} else if count == 1 && targetDir == "" {
-		io.WriteString(os.Stdout, fmt.Sprintln("cp: missing destination file operand after '%s'", args[0]))
+		fmt.Printf("cp: missing destination file operand after '%s'\n", args[0])
 		fmt.Println("Try 'cp --help' for more information.")
 		return
 	}
