@@ -17,6 +17,7 @@ func init() {
 }
 
 func main() {
+	flag.Parse()
 	if help {
 		showUsage()
 		return
